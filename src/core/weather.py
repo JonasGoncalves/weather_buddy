@@ -1,0 +1,2 @@
+class WeatherCore:
+    pass
