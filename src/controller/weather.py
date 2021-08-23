@@ -1,6 +1,18 @@
-class WeatherController:
-    def max_number(self):
-        pass
+from src.core.weather import WeatherCore
+from src.utils.response import Response
 
-    def city_name(self):
-        pass
+response = Response()
+
+
+class WeatherController:
+    def max_number(self, data):
+        weather_core = WeatherCore()
+        response_core = weather_core.max_number(data)
+        return response_core
+
+    def city_name(self, city_name):
+        weather_core = WeatherCore(
+            response=response
+        )
+        response_core = weather_core.city_name(city_name)
+        return response_core
