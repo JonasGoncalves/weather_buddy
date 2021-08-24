@@ -36,11 +36,12 @@ class WeatherCore:
         cached_cities = cache.get_many(*cached_cities)
         cached_cities.pop(0)
 
-        for i in range(max_number):
+        for i in range(len(cached_cities)):
             city = cached_cities[0]
             response.append(city)
-            if not response[0]:
-                break
             cached_cities.pop(0)
+            max_number = max_number - 1
+            if max_number == 0:
+                break
 
         return self.response.success(CITY_CACHE_FOUND, response)
