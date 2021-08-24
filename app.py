@@ -14,8 +14,8 @@ api = Api(app)
 api.add_namespace(weather_ns)
 
 # routes
-weather_ns.add_resource(WeatherMaxNumber, '/?max=<max_number>')
 weather_ns.add_resource(WeatherCityName, '/<city_name>')
+weather_ns.add_resource(WeatherMaxNumber, '')
 
 if __name__ == '__main__':
     app.run(debug=True)
