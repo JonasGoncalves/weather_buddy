@@ -6,7 +6,7 @@ from src.resources.weather import weather_ns, WeatherCityName, WeatherMaxNumber
 
 # configs
 app = Flask(__name__)
-app.config['CACHE_TYPE'] = 'simple'
+app.config['CACHE_TYPE'] = 'flask_caching.backends.SimpleCache'
 cache.init_app(app)
 api = Api(app)
 

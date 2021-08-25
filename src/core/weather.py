@@ -1,6 +1,6 @@
 from src.utils.apikey import API_KEY_WEATHER
 from src.cache import cache
-from src.utils.messages import *
+from src.utils.messages import CITY_FOUND, CITY_NOT_FOUND, CACHE_EMPTY, CITY_CACHE_FOUND
 import requests
 
 
@@ -12,7 +12,7 @@ class WeatherCore:
     def city_name(self, city):
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY_WEATHER}'
         response = requests.get(url).json()
-        cache.set("city_name", response)
+        cache.set('city_name', response)
         if response.get('cod') != 200:
             return self.response.not_found(CITY_NOT_FOUND)
 
