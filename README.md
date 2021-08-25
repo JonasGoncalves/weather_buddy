@@ -22,7 +22,7 @@
  #### **/weather**
 
 <p>
-    Get all the cached cities, up to the latest n entries or the specified <b>max_number<b>.
+    Get all the cached cities, up to the latest n entries or the specified <b>max_number</b>.
 </p>
 
 ## Tests
