@@ -1,6 +1,6 @@
 [![Linkedin Badge](https://img.shields.io/badge/-Antonio%20Jonas-0282d0?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/antonio-jonas-gonçalves-de-oliveira-7a3830191/)](https://www.linkedin.com/in/antonio-jonas-gonçalves-de-oliveira-7a3830191/)
 
-## introduction
+## Introduction
 <p>
     Repository of a API developed to the DevGrid Assessment Challenge. The API goal is to use notions of Python and Flask to consume the Open Weather API, collect the data and than caches it for configurable period of time.
 </p>
@@ -16,7 +16,7 @@
 #### **/weather/<city_name>**
 
 <p>
-    Uses the cache data for the specified <b>city_name<b> searched, if the cache is clean, than uses de Open Weather API to fetch the data and caches.
+    Uses the cache data for the specified <b>city_name</b> searched, if the cache is clean, than uses de Open Weather API to fetch the data and caches.
 </p>
  
  #### **/weather**
