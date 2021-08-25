@@ -1,5 +1,5 @@
-from src.core.weather import WeatherCore
-from src.utils.response import Response
+from core.weather import WeatherCore
+from utils.response import Response
 
 response = Response()
 
