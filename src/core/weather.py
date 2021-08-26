@@ -1,6 +1,6 @@
-from src.utils.apikey import API_KEY_WEATHER
-from src.cache import cache
-from src.utils.messages import CITY_FOUND, CITY_NOT_FOUND, CACHE_EMPTY, CITY_CACHE_FOUND
+from utils.apikey import API_KEY_WEATHER
+from cache import cache
+from utils.messages import CITY_FOUND, CITY_NOT_FOUND, CACHE_EMPTY, CITY_CACHE_FOUND
 import requests
 
 

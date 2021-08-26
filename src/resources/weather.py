@@ -1,6 +1,6 @@
 from flask_restx import Namespace, Resource
 from flask import request
-from src.controller.weather import WeatherController
+from controller.weather import WeatherController
 
 weather_ns = Namespace('weather')
 
